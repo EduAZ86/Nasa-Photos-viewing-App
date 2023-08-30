@@ -7,8 +7,7 @@ const fetching = async (urlParams?: string) => {
         const response = await axios.get(`${API_URL}?api_key=${API_KEY}${
         typeof urlParams !=='undefined' && urlParams?.length > 0
         ? urlParams 
-        : ''}`)
-        
+        : ''}`)        
         return response.data
     } catch (error) {
         return error

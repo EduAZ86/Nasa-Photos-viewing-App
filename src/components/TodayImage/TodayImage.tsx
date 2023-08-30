@@ -6,6 +6,7 @@ import { NativeStackNavigationProp} from '@react-navigation/native-stack'
 
 type PostImageNavigationProps = NativeStackNavigationProp<RootStackParams, 'Detail'>
 
+
 const TodaysImage: FC<PostImage> = ({date, title, url, explanation}) => {
     const {navigate} = useNavigation<PostImageNavigationProps>()
     
